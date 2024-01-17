@@ -26,3 +26,19 @@ When you only need to include Bootstrap’s compiled CSS or JS, you can use jsDe
 ```html
 <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/2.3.1/list.min.js"></script>
 ```
+
+
+Второй урок - исправления:
+
+<button class="add btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">&#10010;</button>
+
+Чтобы кнопка позеленела надо написать имя класса class="btn btn-success" или class="add btn btn-success" :
+
+<button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">&#10010;</button>
+
+И тип кнопки, наверное, надо бы указать:
+
+<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">&#10010;</button>
+
+
+Во второй таблице: "цена/шт."

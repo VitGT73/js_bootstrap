@@ -1,0 +1,108 @@
+{
+    "editor.tabSize": 2,
+        /*
+     * ФОРМАТИРОВАНИЕ
+     */
+
+    // По умолчанию форматирование кода запрещено
+    "editor.formatOnSave": false, // форматировать код при сохранении файла
+    "editor.formatOnPaste": false, // форматировать при вставке фрагмента кода
+    "editor.codeActionsOnSave": [], // набор действий при сохранении файла
+    "editor.defaultFormatter": null,
+    // Разрешить или запретить расширения eslint и prettier
+    "prettier.enable": true, // нужен рестарт vs code
+    "eslint.enable": true,
+    // Настройки форматирования javascript
+    "eslint.format.enable": true, // запретить или разрешить форматирование
+    "eslint.run": "onType", // запускать проверку кода по мере печати кода
+    "eslint.probe": [ // какие файлы нужно проверять
+        "javascript"
+    ],
+    "eslint.rules.customizations": [
+        // для проблем форматирования кода уровень info
+        {"rule": "prettier/prettier", "severity": "info"}
+    ],
+    "[javascript]": {
+        "editor.formatOnPaste": true,
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    // Настройки форматирования css
+    "css.format.enable": true,
+    "css.validate": true,
+    "css.format.newlineBetweenRules": false,
+    "css.format.newlineBetweenSelectors": false,
+    "css.lint.duplicateProperties": "warning",
+    "css.format.spaceAroundSelectorSeparator": true,
+    "[css]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": true,
+        "editor.defaultFormatter": "vscode.css-language-features"
+    },
+    // Настройки форматирования json
+    "json.format.enable": true,
+    "json.validate.enable": true,
+    "[json]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": true,
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    // Настройки форматирования html
+    "html.format.enable": true, // разрешить форматирование html-кода
+    "html.format.wrapLineLength": 120, // максимальная длина сроки до переносана новую
+    "html.format.unformatted": null, // эти теги не форматировать (см.ссылку в подсказке)
+    "html.format.contentUnformatted": "pre,code,textarea", // контент этих тегов не форматировать
+    "html.format.extraLiners": "", // пустая строка перед этими тегами
+    "html.format.preserveNewLines": false, // сохранять или нет пустые строки
+    "html.format.maxPreserveNewLines": null, // сколько пустых строк сохранять
+    "html.format.indentInnerHtml": false, // отступ <head> и <body> относительно <html>
+    "html.format.wrapAttributes": "preserve-aligned", // перенос и выравнивание атрибутов
+    "html.format.wrapAttributesIndentSize": null, // размер отступа при переносе и выравнивании атр.
+    "html.validate.scripts": true, // проверять js-скрипты внутри html-кода
+    "html.validate.styles": true, // проверять css-стили внутри html-кода
+    "[html]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": true,
+        "editor.defaultFormatter": "vscode.html-language-features",
+    },
+    // Настройки форматирования markdown
+    "[markdown]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": true,
+        "editor.defaultFormatter": "vscode.markdown-language-features"
+    },
+
+    /*
+     * РАСШИРЕНИЯ
+     */
+
+    // Расширение Live Server, простой веб-сервер для разработки
+    "liveServer.settings.root": "/build",
+    "liveServer.settings.host": "localhost",
+    "liveServer.settings.fullReload": false,
+    "liveServer.settings.port": 5555,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "liveServer.settings.donotVerifyTags": true,
+    // Расширение Prettier для форматирования кода
+    "prettier.arrowParens": "avoid", // скобки вокруг единственного параметра стрелочной функции
+    "prettier.bracketSpacing": true, // пробелы между скобками в литералах объектов
+    "prettier.endOfLine": "lf", // окончания строк
+    "prettier.htmlWhitespaceSensitivity": "css", // форматирование html с учетом пробелов
+    "prettier.insertPragma": false, // вставлять спец.комментарий в начало файла
+    "prettier.jsxBracketSameLine": false, // где будет завершающий > многострочного jsx-элемента
+    "prettier.jsxSingleQuote": false, // использовать в jsx одинарные кавычки вместо двойных
+    "prettier.printWidth": 100, // на какой позиции выполнять перенос строки при печати
+    "prettier.proseWrap": "preserve", // как обрабатывать markdown файлы
+    "prettier.quoteProps": "as-needed", // свойства объекта в кавычках или без кавычек
+    "prettier.requirePragma": false, // форматировать только файлы со спец.комментарием в начале
+    "prettier.semi": true, // точка с запятой в конце операторов
+    "prettier.singleQuote": true, // использовать одинарные кавычки вместо двойных
+    "prettier.tabWidth": 4, // заменять табуляцию на 4 пробела
+    "prettier.trailingComma": "es5", // конечные запятые в объектах и массивах
+    "prettier.useTabs": false, // делать отступы с помощью табуляции
+    "prettier.vueIndentScriptAndStyle": false, // отступ внутри <script> и <style> в vue файлах
+    "prettier.embeddedLanguageFormatting": "auto" // форматировать встроенный код
+}
