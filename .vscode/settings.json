@@ -80,7 +80,7 @@
      */
 
     // Расширение Live Server, простой веб-сервер для разработки
-    "liveServer.settings.root": "/build",
+    "liveServer.settings.root": "/",
     "liveServer.settings.host": "localhost",
     "liveServer.settings.fullReload": false,
     "liveServer.settings.port": 5555,
@@ -92,7 +92,7 @@
     "prettier.endOfLine": "lf", // окончания строк
     "prettier.htmlWhitespaceSensitivity": "css", // форматирование html с учетом пробелов
     "prettier.insertPragma": false, // вставлять спец.комментарий в начало файла
-    "prettier.jsxBracketSameLine": false, // где будет завершающий > многострочного jsx-элемента
+    // "prettier.jsxBracketSameLine": false, // где будет завершающий > многострочного jsx-элемента
     "prettier.jsxSingleQuote": false, // использовать в jsx одинарные кавычки вместо двойных
     "prettier.printWidth": 100, // на какой позиции выполнять перенос строки при печати
     "prettier.proseWrap": "preserve", // как обрабатывать markdown файлы

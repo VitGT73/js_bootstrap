@@ -42,3 +42,5 @@ When you only need to include Bootstrap’s compiled CSS or JS, you can use jsDe
 
 
 Во второй таблице: "цена/шт."
+
+В модальном окне тоже исправить цвет
