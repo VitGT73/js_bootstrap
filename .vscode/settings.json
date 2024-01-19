@@ -22,11 +22,11 @@
         // для проблем форматирования кода уровень info
         {"rule": "prettier/prettier", "severity": "info"}
     ],
-    "[javascript]": {
-        "editor.formatOnPaste": true,
-        "editor.formatOnSave": true,
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
+    // "[javascript]": {
+    //     "editor.formatOnPaste": true,
+    //     "editor.formatOnSave": true,
+    //     "editor.defaultFormatter": "esbenp.prettier-vscode"
+    // },
     // Настройки форматирования css
     "css.format.enable": true,
     "css.validate": true,
@@ -104,5 +104,8 @@
     "prettier.trailingComma": "es5", // конечные запятые в объектах и массивах
     "prettier.useTabs": false, // делать отступы с помощью табуляции
     "prettier.vueIndentScriptAndStyle": false, // отступ внутри <script> и <style> в vue файлах
-    "prettier.embeddedLanguageFormatting": "auto" // форматировать встроенный код
+    "prettier.embeddedLanguageFormatting": "auto",
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    } // форматировать встроенный код
 }
